@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formelsamling</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./src/js/app.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <h1>FORMELSAMLING</h1>
+      <div class="formula-container">
+        <div class="formula__box">
+          <button type="button" class="formula__btn">
+            Cirkel
+          </button>
+          <div class="formula__content">
+            <form class="formula__form">
+              <div class="formula__input-container">
+                <label for="circle-input-1" class="formula__label"
+                  >Radius (R)
+                </label>
+                <input
+                  type="text"
+                  id="circle-input-1"
+                  data-input="circle-input"
+                  class="formula__input"
+                />
+              </div>
+              <div class="formula__input-container">
+                <label for="circle-input-2" class="formula__label"
+                  >Diameter (D)
+                </label>
+                <input
+                  type="text"
+                  id="circle-input-2"
+                  data-input="circle-input"
+                  class="formula__input"
+                />
+              </div>
+              <div class="formula__input-container">
+                <label for="circle-input-3" class="formula__label"
+                  >Omkreds (O)
+                </label>
+                <input
+                  type="text"
+                  id="circle-input-3"
+                  data-input="circle-input"
+                  class="formula__input"
+                />
+              </div>
+              <div class="formula__input-container">
+                <label for="circle-input-4" class="formula__label"
+                  >Areal (A)
+                </label>
+                <input
+                  type="text"
+                  id="circle-input-4"
+                  data-input="circle-input"
+                  class="formula__input"
+                />
+              </div>
+              <p class="formula__info">Vælg kun et felt!</p>
+              <button
+                type="button"
+                class="formula__form-btn"
+                id="circle-button-submit"
+              >
+                Beregn
+              </button>
+            </form>
+            <div class="formula__results"></div>
+          </div>
+        </div>
+        <div class="formula__box">
+          <button type="button" class="formula__btn" data-item="square">
+            Trekant (Areal)
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

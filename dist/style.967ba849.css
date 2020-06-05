@@ -1,0 +1,234 @@
+/** IMPORTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+
+/** VARIABLES */
+
+:root {
+  --color-white: #fff;
+  --color-black: #232931;
+  --color-gray: #f7f7f7;
+  --color-gray-dark: #f2f2f2;
+  --color-primary: #f0a500;
+  --color-primary-light: #ffcd61;
+  --color-warning: #ff6161;
+
+  --font-primary: 'Noto Sans KR', sans-serif;
+}
+
+/** RESET & BASIC */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-gray);
+  font-size: 1.6rem;
+  font-family: var(--font-primary);
+  width: 106rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+input,
+textarea {
+  font-size: 1.4rem;
+  font-family: var(--font-primary);
+  color: var(--color-black);
+}
+
+button {
+  font-family: var(--font-primary);
+}
+
+button:focus {
+  outline: none !important;
+}
+
+a:link,
+a:visited {
+  color: var(--color-primary);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1 {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 4rem;
+  letter-spacing: -0.1rem;
+  position: relative;
+  padding-left: 3rem;
+}
+
+h1::after {
+  position: absolute;
+  content: '';
+  z-index: -1;
+  bottom: -0.4rem;
+  left: 0;
+  background-color: var(--color-primary-light);
+  width: 40rem;
+  height: 50%;
+}
+
+.container {
+  padding: 8rem 0;
+  max-width: 100%;
+}
+
+/** FORMULA */
+
+.formula-container {
+  margin-top: 4rem;
+}
+
+.formula__box:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.formula__btn {
+  display: flex;
+  width: 100%;
+  background-color: var(--color-black);
+  height: 6rem;
+  padding: 0 3.5rem;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.formula__btn:hover {
+  transform: scale(1.05);
+  background-color: var(--color-primary);
+}
+
+.formula__btn--active {
+  transform: scale(1.05);
+  background-color: var(--color-primary);
+}
+
+.formula__content {
+  display: none;
+  visibility: hidden;
+  margin-top: 1rem;
+}
+
+.formula__content--active {
+  display: flex;
+  visibility: visible;
+  transform: scale(1.05);
+  padding: 2rem 2.5rem;
+  background-color: var(--color-white);
+  backface-visibility: hidden;
+}
+
+.formula__form {
+  transform: scale(0.95);
+}
+
+.formula__input-container {
+  display: flex;
+  align-items: center;
+}
+
+.formula__input-container {
+  margin-bottom: 2rem;
+}
+
+.formula__label {
+  margin-right: 2rem;
+  width: 14rem;
+  color: #666;
+  font-weight: 700;
+  position: relative;
+}
+
+.formula__label::after {
+  content: '=';
+  font-size: 1.6rem;
+  position: absolute;
+  right: 0;
+}
+
+.formula__input {
+  border: 0.2rem solid transparent;
+  background-color: var(--color-gray-dark);
+  padding: 1rem 1.4rem;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+}
+
+.formula__input:focus {
+  border: 0.2rem solid var(--color-primary-light);
+}
+
+.formula__img-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.formula__img {
+  display: block;
+  height: 25rem;
+}
+
+.formula__form-btn {
+  padding: 1rem;
+  border: none;
+  background-color: var(--color-primary-light);
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--color-black);
+  transition: background-color 0.2s ease;
+}
+
+.formula__form-btn:hover {
+  background-color: var(--color-primary);
+}
+
+.formula__info {
+  width: 100%;
+  border: 0.2rem solid var(--color-warning);
+  color: var(--color-black);
+  font-weight: 700;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem;
+}
+
+.formula__results {
+  transform: scale(0.95);
+}
+
+.formula__result {
+  display: flex;
+  align-items: center;
+  height: 4.4rem;
+  margin-bottom: 2rem;
+}
+
+
+/*# sourceMappingURL=/style.967ba849.css.map */
